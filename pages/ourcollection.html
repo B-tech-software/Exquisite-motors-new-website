@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Collection - Exquisite Cars</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link rel="stylesheet" href="/styles/style.css">
+    
+    
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(0,201,104);stop-opacity:1" /><stop offset="100%" style="stop-color:rgb(0,255,127);stop-opacity:1" /></linearGradient></defs><style>.heavy { font-family: 'Poppins', sans-serif; font-size: 80px; font-weight: 800; fill: url(#grad1); } .light { font-family: 'Roboto', sans-serif; font-size: 20px; font-weight: 500; fill: #F8F9FA; letter-spacing: 11px; }</style><text class="heavy" x="0" y="75">EC</text><text class="light" x="145" y="65">EXQUISITE</text><text class="light" x="145" y="85">CARS</text></svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="services.html">services </li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="ourcollection.html">Our Collection</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="gradient-text" data-aos="fade-up">Our Collection</h1>
+            <p class="lead text-light" data-aos="fade-up" data-aos-delay="100">Explore our full inventory of premium, hand-selected vehicles.</p>
+        </div>
+    </section>
+
+    <main id="main">
+        <section class="collection py-5">
+            <div class="container py-5">
+                
+                <div class="filter-bar" data-aos="fade-up">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-lg-4 col-md-6">
+                            <select class="form-select" id="brand-filter">
+                                <option value="all" selected>Filter by Brand (All)</option>
+                                <option value="toyota">Toyota</option>
+                                <option value="lexus">Lexus</option>
+                                <option value="land-rover">Land Rover</option>
+                                <option value="ford">Ford</option>
+                                <option value="mazda">Mazda</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <select class="form-select" id="type-filter">
+                                <option value="all" selected>Filter by Type (All)</option>
+                                <option value="suv">SUV</option>
+                                <option value="truck">Truck</option>
+                                <option value="sedan">Sedan</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-md-12 d-grid">
+                            <button class="btn btn-gradient" id="filter-button">Apply Filters</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row gy-4 mt-5" id="car-grid">
+                    <div class="col-lg-4 col-md-6 car-item" data-brand="toyota" data-type="suv" data-aos="fade-up">
+                        <div class="car-card"><img src="https://placehold.co/600x400/181818/00FF7F?text=Land+Cruiser+300" alt="Toyota Land Cruiser 300"><div class="card-body"><h3 class="card-title">Toyota Land Cruiser 300 ZX</h3><p class="card-price">$185,000</p><p class="spec">2024 | 5,000 Km | Automatic</p></div></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 car-item" data-brand="toyota" data-type="suv" data-aos="fade-up">
+                        <div class="car-card"><img src="https://placehold.co/600x400/111111/00FF7F?text=Toyota+Fortuner" alt="Toyota Fortuner GD-6"><div class="card-body"><h3 class="card-title">Toyota Fortuner 2.8 GD-6</h3><p class="card-price">$68,000</p><p class="spec">2023 | 21,000 Km | Automatic</p></div></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 car-item" data-brand="lexus" data-type="suv" data-aos="fade-up">
+                        <div class="car-card"><img src="https://placehold.co/600x400/222222/00FF7F?text=Lexus+LX600" alt="Lexus LX600"><div class="card-body"><h3 class="card-title">Lexus LX 600d VIP</h3><p class="card-price">$240,000</p><p class="spec">2024 | 2,500 Km | Automatic</p></div></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 car-item" data-brand="ford" data-type="truck" data-aos="fade-up">
+                        <div class="car-card"><img src="https://placehold.co/600x400/111111/00FF7F?text=Ford+Ranger" alt="Ford Ranger Raptor"><div class="card-body"><h3 class="card-title">Ford Ranger Raptor</h3><p class="card-price">$85,000</p><p class="spec">2023 | 11,500 Km | Automatic</p></div></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 car-item" data-brand="land-rover" data-type="suv" data-aos="fade-up">
+                        <div class="car-card"><img src="https://placehold.co/600x400/181818/00FF7F?text=Defender+110" alt="Land Rover Defender"><div class="card-body"><h3 class="card-title">Land Rover Defender 110</h3><p class="card-price">$135,000</p><p class="spec">2023 | 15,000 Km | Automatic</p></div></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 car-item" data-brand="mazda" data-type="suv" data-aos="fade-up">
+                        <div class="car-card"><img src="https://placehold.co/600x400/222222/00FF7F?text=Mazda+CX-5" alt="Mazda CX-5"><div class="card-body"><h3 class="card-title">Mazda CX-5 Akera</h3><p class="card-price">$45,000</p><p class="spec">2022 | 35,000 Km | Automatic</p></div></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 car-item" data-brand="toyota" data-type="truck" data-aos="fade-up">
+                        <div class="car-card"><img src="https://placehold.co/600x400/111111/00FF7F?text=Toyota+Hilux" alt="Toyota Hilux Legend"><div class="card-body"><h3 class="card-title">Toyota Hilux 2.8 GR-Sport</h3><p class="card-price">$75,000</p><p class="spec">2024 | 1,500 Km | Automatic</p></div></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 car-item" data-brand="lexus" data-type="sedan" data-aos="fade-up">
+                        <div class="car-card"><img src="https://placehold.co/600x400/181818/00FF7F?text=Lexus+IS+350" alt="Lexus IS 350"><div class="card-body"><h3 class="card-title">Lexus IS 350 F-Sport</h3><p class="card-price">$58,000</p><p class="spec">2021 | 40,000 Km | Automatic</p></div></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 car-item" data-brand="toyota" data-type="suv" data-aos="fade-up">
+                        <div class="car-card"><img src="https://placehold.co/600x400/222222/00FF7F?text=Land+Cruiser+Prado" alt="Land Cruiser Prado"><div class="card-body"><h3 class="card-title">Toyota Land Cruiser Prado VX</h3><p class="card-price">$92,000</p><p class="spec">2022 | 28,000 Km | Automatic</p></div></div>
+                    </div>
+                </div>
+                
+                <nav aria-label="Page navigation" class="mt-5 pt-4" data-aos="fade-up">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12 text-center text-lg-start">
+                    <a class="navbar-brand" href="index.html">
+                        <svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(0,201,104);stop-opacity:1" /><stop offset="100%" style="stop-color:rgb(0,255,127);stop-opacity:1" /></linearGradient></defs><style>.f-heavy { font-family: 'Poppins', sans-serif; font-size: 80px; font-weight: 800; fill: url(#grad2); } .f-light { font-family: 'Roboto', sans-serif; font-size: 20px; font-weight: 500; fill: #F8F9FA; letter-spacing: 11px; }</style><text class="f-heavy" x="0" y="75">EC</text><text class="f-light" x="145" y="65">EXQUISITE</text><text class="f-light" x="145" y="85">CARS</text></svg>
+                    </a>
+                    <p class="footer-logo-p">Your trusted partner in premium and luxury vehicles, offering unparalleled service and quality in Harare.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="collections.html" class="footer-link">Our Collection</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact Information</h5>
+                    <address class="mb-0" style="font-style: normal;">
+                         <a href="#" class="footer-link d-block"><i class="bi bi-geo-alt-fill me-2"></i>123 Luxury Lane, Harare, Zimbabwe</a>
+                         <a href="tel:+263771234567" class="footer-link d-block"><i class="bi bi-telephone-fill me-2"></i>+263 77 123 4567</a>
+                         <a href="mailto:sales@exquisitecars.co.zw" class="footer-link d-block"><i class="bi bi-envelope-fill me-2"></i>sales@exquisitecars.co.zw</a>
+                    </address>
+                     <div class="social-links mt-3">
+                        <a href="#" class="footer-link fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="footer-link fs-4 me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="footer-link fs-4"><i class="bi bi-whatsapp"></i></a>
+                     </div>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: #333;">
+            <p class="text-center mb-0" style="color: var(--text-muted);">&copy; 2025 Exquisite Cars. All Rights Reserved. </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+
+
+</body>
+</html>
